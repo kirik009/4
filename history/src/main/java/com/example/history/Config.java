@@ -6,5 +6,6 @@ public class Config {
     protected String dbPort = "3306";
     protected String dbUser = "root";
     protected String dbPass = "zxzx";
+    
     protected String dbName = "history";
 }
