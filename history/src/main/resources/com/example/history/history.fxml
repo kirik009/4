@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.history.HistoryController">
+   <children>
+      <AnchorPane prefHeight="64.0" prefWidth="600.0" style="-fx-background-color: #8b00ff;">
+         <children>
+            <Button fx:id="StartButton" layoutX="14.0" layoutY="21.0" mnemonicParsing="false" onAction="#OnStartButtonClick" style="-fx-background-color: #ff0000; -fx-background-radius: 5;" text="Вернуться на начальную страницу">
+               <font>
+                  <Font name="Tahoma" size="12.0" />
+               </font></Button>
+            <Button fx:id="ChatButton" layoutX="456.0" layoutY="20.0" mnemonicParsing="false" onAction="#OnChatButtonClick" prefHeight="26.0" prefWidth="131.0" style="-fx-background-color: #ff0000; -fx-background-radius: 5;" text="Чат">
+               <font>
+                  <Font name="SimSun" size="12.0" />
+               </font></Button>
+         </children></AnchorPane>
+      <MenuButton layoutX="497.0" layoutY="74.0" mnemonicParsing="false" text="Разделы ">
+        <items>
+            <MenuItem fx:id="item1" mnemonicParsing="false" onAction="#OnItem1Click" text="Научный подход к ракетам" />
+          <MenuItem fx:id="item2" mnemonicParsing="false" onAction="#OnItem2Click" text="Эра ракет" />
+          <MenuItem fx:id="item3" mnemonicParsing="false" onAction="#OnItem3Click" text="Космическая гонка - на луну и дальше" />
+            <MenuItem fx:id="item4" mnemonicParsing="false" onAction="#OnItem4Click" text="Спейс шаттл" />
+            <MenuItem fx:id="item5" mnemonicParsing="false" onAction="#OnItem5Click" text="Новые подходы" />
+            <MenuItem fx:id="item6" mnemonicParsing="false" onAction="#OnItem6Click" text="Кула дежит наш путь?" />
+        </items>
+      </MenuButton>
+      <TextArea fx:id="text" layoutX="-2.0" layoutY="102.0" prefHeight="423.0" prefWidth="588.0" />
+   </children>
+</AnchorPane>
